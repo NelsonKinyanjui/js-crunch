@@ -1,2 +1,8 @@
-let result = (a+b < 4) ? 'below' : 'over';
+let message = (login == 'employee') ? 'Hello':
+    (login == 'director') ? 'greetings' :
+    (login == '') ? 'no login':
+    '';
+
+
+
 
