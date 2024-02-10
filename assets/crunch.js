@@ -1,23 +1,19 @@
-let  userName = prompt('who is here?','');
+let userName = prompt("Who's there?", '');
 
-if (userName = 'Admin'){
-    let pass = prompt('password?','');
+if (userName === 'Admin') {
 
-if (pass ==='TheMaster'){
-    alert('welcome!');
+  let pass = prompt('Password?', '');
 
-}
-else if (pass === '' || pass === null){
-    alert('cancelled');
-}
-else {
-    alert('wrong password');
-}
-}
-else if (userName === '' || userName === null){
-    alert('cancelled');
-}
-else {
-    alert('I dont know you');
-}
+  if (pass === 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (pass === '' || pass === null) {
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
 
+} else if (userName === '' || userName === null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
+}
