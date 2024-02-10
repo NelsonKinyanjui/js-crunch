@@ -1,19 +1,20 @@
-let  login = prompt('');
-if (login = 'Admin'){
-prompt('password', '');
-let password = '';
-if (password ='TheMaster'){
+let  userName = prompt('who is here?','');
+
+if (userName = 'Admin'){
+    let pass = prompt('password?','');
+
+if (pass ==='TheMaster'){
     alert('welcome!');
 
 }
-else if (password = ''){
-    alert('wrong password');
-}
-else {
+else if (pass === '' || pass === null){
     alert('cancelled');
 }
+else {
+    alert('wrong password');
 }
-else if (login = ''){
+}
+else if (userName === '' || userName === null){
     alert('cancelled');
 }
 else {
